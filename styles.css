@@ -1,10 +1,13 @@
-/*/////////////////////Slide Show///////////////////////////////////*/
+/***********************************
+Slide Show
+************************************/
 #crossfade > img { 
-    width: 225px;
-    height: 300px;
+    width: 46%;
+    max-height: 100%;
+    height: 60%;
     position: absolute;
-    top: 60px;
-    left: 550px;
+    top: 31%;
+    left: 50%;
     color: transparent;
     opacity: 0;
     z-index: 0;
@@ -95,21 +98,101 @@
     100% { opacity: 0 }
 }
 
-/*//////////////Main Styling//////////////////////////////*/
+/******************************
+General
+********************************/
 
 body{
 	background-image: url(img/contemporary_china_2.png);
 	border-top: 50px solid #36e0B9;
 }
 
+/***************************
+Header
+***************************/
+
 h1, h2 {
 	color: #687f89;
 	text-align: center;
 	margin: auto 0;
 	font-family: 'Biryani', sans-serif;
-	background: color: red;
+	background-color: #ccc;
 }
-img.logo{
-	max-width: 75px;
-	max-height: 100px;
+
+#bio{
+	float: left;
+	padding: 4em 10% 4em 8%;
+	text-align: center;
+	background-color: #ccc;
+	margin: 0 auto;
+	width: 45%;
+	max-width: 200px;
+	display: block;
+	position-left: 45%;
+	top: 50%;
+}
+
+#me{
+	float: right;
+	padding: 6em 10% 4em 10%;
+	text-align: justify;
+	background-color: #ccc;
+	margin: 0 auto;
+	width: 45%;
+	max-width: 500px;
+	display: block;
+}
+
+div {
+	padding: 50px;
+	float: right;
+	background-color: #36e0B9;
+	width: 50%;
+	height: 300px;
+}
+
+/***************************
+Navagation
+***************************/
+
+li a:hover {
+	color: #36e0B9;
+}
+
+nav {
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0 0;
+	background-color: white;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
+nav li{
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+	color: #ccc;
+}
+/***************************
+Footer
+***************************/
+.logo {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
+footer {
+	text-align: center;
+	font-size: .75em;
+	padding-top: 50px;
+	color: #ccc;
+	clear: both;
 }
