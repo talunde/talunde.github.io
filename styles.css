@@ -1,6 +1,57 @@
 /***********************************
-Slide Show
+CSS Reset
 ************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
 #crossfade > img { 
     width: 46%;
     max-height: 100%;
@@ -18,6 +69,15 @@ Slide Show
     -ms-animation: imageAnimation 30s linear infinite 0s;
     animation: imageAnimation 30s linear infinite 0s; 
 }
+
+/***********************************
+Slide Show
+************************************/
+/*
+http://stackoverflow.com/questions/14313825/
+multiple-image-cross-fading-in-css-without-java-script
+License: none (public domain)
+*/
 
 #crossfade > img:nth-child(2)  {
     -webkit-animation-delay: 6s;
@@ -101,20 +161,27 @@ Slide Show
 /******************************
 General
 ********************************/
-
-body{
+html{
 	background-image: url(img/contemporary_china_2.png);
-	border-top: 50px solid #36e0B9;
+}
+
+.main-wrapper{
+	width: 90%;
+	margin: auto;
 }
 
 /***************************
 Header
 ***************************/
+.main-header {
+	padding:20px;
+	white-space: nowrap;
+}
+
 
 h1, h2 {
 	color: #687f89;
 	text-align: center;
-	margin: auto 0;
 	font-family: 'Biryani', sans-serif;
 	background-color: #ccc;
 }
@@ -124,7 +191,6 @@ h1, h2 {
 	padding: 4em 10% 4em 8%;
 	text-align: center;
 	background-color: #ccc;
-	margin: 0 auto;
 	width: 45%;
 	max-width: 200px;
 	display: block;
@@ -137,18 +203,9 @@ h1, h2 {
 	padding: 6em 10% 4em 10%;
 	text-align: justify;
 	background-color: #ccc;
-	margin: 0 auto;
 	width: 45%;
 	max-width: 500px;
 	display: block;
-}
-
-div {
-	padding: 50px;
-	float: right;
-	background-color: #36e0B9;
-	width: 50%;
-	height: 300px;
 }
 
 /***************************
@@ -159,27 +216,31 @@ li a:hover {
 	color: #36e0B9;
 }
 
-nav {
-	text-align: center;
-	padding: 10px 0;
-	margin: 20px 0 0;
-	background-color: white;
-}
-
-nav ul {
-	list-style: none;
-	margin: 0 10px;
-	padding: 0;
-}
 nav li{
 	display: inline-block;
+	
+	border-radius: 7px;
+	background-color: white;
+	margin-right: 5px;
+}
+.home{
+	margin-right: 5px;
 }
 
 nav a {
 	font-weight: 800;
-	padding: 15px 10px;
 	color: #ccc;
+	display: block;
+	text-align: center;
+	padding: 10px 20px;
 }
+nav {
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0 0;
+	vertical-align: center;
+}
+
 /***************************
 Footer
 ***************************/
