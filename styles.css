@@ -50,15 +50,22 @@ table {
 	border-spacing: 0;
 }
 
-
-
-#crossfade > img { 
-    width: 46%;
+/***********************************
+Slide Show
+************************************/
+/*
+http://stackoverflow.com/questions/14313825/
+multiple-image-cross-fading-in-css-without-java-script
+License: none (public domain)
+*/
+#crossfade > img {
+    border-radius: 0 20px 0 20px;
+    border: solid 5px;
+    border-color: #1e3e4a; 
+    width: 40%;
     max-height: 100%;
-    height: 60%;
-    position: absolute;
-    top: 31%;
-    left: 50%;
+    height: 55%;
+    position: absolute;s
     color: transparent;
     opacity: 0;
     z-index: 0;
@@ -69,15 +76,6 @@ table {
     -ms-animation: imageAnimation 30s linear infinite 0s;
     animation: imageAnimation 30s linear infinite 0s; 
 }
-
-/***********************************
-Slide Show
-************************************/
-/*
-http://stackoverflow.com/questions/14313825/
-multiple-image-cross-fading-in-css-without-java-script
-License: none (public domain)
-*/
 
 #crossfade > img:nth-child(2)  {
     -webkit-animation-delay: 6s;
@@ -157,6 +155,69 @@ License: none (public domain)
     25% { opacity: 0 }
     100% { opacity: 0 }
 }
+/******************************
+Texts, fonts, colors
+********************************/
+
+h2, h3, h4 {
+    font-family: 'Averia Libre', cursive;
+} 
+
+h1{
+    font-family: 'Crushed', cursive;
+    font-size: 2em;
+    font-weight: 800;
+    color: #ff853d;
+    display: block;
+    background: #ccc;
+    border-radius: 0 20px 0 0;
+    padding: 20px 0 0 30px;
+}
+
+h2{     
+    font-family: 'Crushed', cursive;
+    font-size: 3.5em;
+    font-weight: 800;
+    color: #ff853d;
+    display: block;
+    background: #ccc;
+    border-radius: 0 0 0 20px;
+    padding: 0 360px 20px 30px;
+
+}
+
+#bio{
+    font-size: 2em;
+    font-weight: 800;
+    color: #ff853d;
+    padding: 20px;
+    background: #1e3e4a;
+    border-radius: 0 20px 0 20px;
+    border-color: #1e3e4a;
+    border: solid 10px;
+}
+
+h3{
+    font: bold;
+    font-weight: 700;
+    color: #;
+}
+h4{
+    font: italic;
+    font-weight: 500;
+    color: #2e4564;
+}
+h5{
+    letter-spacing: 1px;
+    font-family:'Crushed', cursive;
+    color: #ff853d;
+    font-weight: 600;
+}
+
+p{
+    color: #1e3e4a;
+    font-weight: 600;
+}
 
 /******************************
 General
@@ -164,12 +225,28 @@ General
 html{
 	background-image: url(img/contemporary_china_2.png);
 }
+body{
+    border-top: 20px #ccc;
+}
 
 .main-wrapper{
 	width: 90%;
 	margin: auto;
 }
+.col {
+	display: inline-block;
+	padding: 20px;
+	vertical-align: top;
+}
+html,
+body,
+.main-wrapper{
+	height: 100%
+}
 
+#me{
+    padding-top:20px;
+}
 /***************************
 Header
 ***************************/
@@ -178,49 +255,47 @@ Header
 	white-space: nowrap;
 }
 
-
-h1, h2 {
-	color: #687f89;
-	text-align: center;
-	font-family: 'Biryani', sans-serif;
-	background-color: #ccc;
-}
-
-#bio{
-	float: left;
-	padding: 4em 10% 4em 8%;
-	text-align: center;
-	background-color: #ccc;
-	width: 45%;
-	max-width: 200px;
-	display: block;
-	position-left: 45%;
-	top: 50%;
-}
-
-#me{
+.main-content {
 	float: right;
-	padding: 6em 10% 4em 10%;
+	padding: 6em 10% 0 10%;
 	text-align: justify;
-	background-color: #ccc;
-	width: 45%;
-	max-width: 500px;
+	background-color: #E6E6E6;
+    width: 30%;
+	height: 100%;
 	display: block;
 }
-
+#bio{
+	text-align: center;
+	margin-right: -5px;
+}
+.slideshow{
+	float: left;
+	background-color: #52f7a3;
+	height: 100%;
+	width: 45%;
+	padding-bottom: 75px;
+}
+.head{
+    float: left;
+}
+.quote{
+    height: 140px;
+    width: 430px;
+    border-radius: 5px;
+    padding-left: 4px;
+    }
 /***************************
 Navagation
 ***************************/
 
 li a:hover {
-	color: #36e0B9;
+	color: #52f7a3;
 }
 
 nav li{
 	display: inline-block;
-	
 	border-radius: 7px;
-	background-color: white;
+	background-color: #e3f6a7;
 	margin-right: 5px;
 }
 .home{
@@ -229,10 +304,12 @@ nav li{
 
 nav a {
 	font-weight: 800;
-	color: #ccc;
+	color: #1e3e4a;
 	display: block;
 	text-align: center;
 	padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.25em;
 }
 nav {
 	text-align: center;
@@ -253,7 +330,14 @@ Footer
 footer {
 	text-align: center;
 	font-size: .75em;
-	padding-top: 50px;
+	padding: 20px;
 	color: #ccc;
 	clear: both;
+}
+
+/***************************
+Resume page
+***************************/
+.resume{
+	text-align: center;
 }
