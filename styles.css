@@ -200,12 +200,25 @@ h2{
 h3{
     font: bold;
     font-weight: 700;
-    color: #;
+    color: #1e3e4a;
+    padding: 10px;
+    background-color: #E6E6E6;
+    text-align: justify;
+    border: solid 5px;
+    border-color: #52f7a3;
+    display: inline-block;
 }
+
 h4{
     font: italic;
     font-weight: 500;
     color: #2e4564;
+    padding: 10px;
+    background-color: #E6E6E6;
+    text-align: justify;
+    border: solid 5px;
+    border-color: #52f7a3;
+    display: inline-block;
 }
 h5{
     letter-spacing: 1px;
@@ -319,6 +332,38 @@ nav {
 }
 
 /***************************
+Resume page
+***************************/
+.title{
+    font-size: 2em;
+    font-weight: 800;
+    color: #ff853d;
+    padding: 20px;
+    background: #1e3e4a;
+    border-radius: 0 20px 0 20px;
+    border-color: #1e3e4a;
+    border: solid 5px;
+    display: inline-block;
+    text-align: center;
+}
+.objective,
+.education-hs,
+.education-college,
+.skill,
+.experience{
+    color: #1e3e4a;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e3f6a7;
+    border-radius: 7px;
+    text-align: justify center;
+}
+section{
+    text-align: center;
+}
+
+/***************************
 Footer
 ***************************/
 .logo {
@@ -335,9 +380,3 @@ footer {
 	clear: both;
 }
 
-/***************************
-Resume page
-***************************/
-.resume{
-	text-align: center;
-}
