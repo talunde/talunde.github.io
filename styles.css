@@ -238,10 +238,6 @@ General
 html{
 	background-image: url(img/contemporary_china_2.png);
 }
-body{
-    border-top: 20px #ccc;
-}
-
 .main-wrapper{
 	width: 90%;
 	margin: auto;
@@ -260,6 +256,7 @@ body,
 #me{
     padding-top:20px;
 }
+
 /***************************
 Header
 ***************************/
@@ -306,6 +303,8 @@ li a:hover {
 }
 
 nav li{
+    font-family: 'Averia Libre', cursive;
+    color: #1e3e4a; 
 	display: inline-block;
 	border-radius: 7px;
 	background-color: #e3f6a7;
@@ -350,16 +349,54 @@ Resume page
 .education-hs,
 .education-college,
 .skill,
-.experience{
+.experience,
+.goals{
     color: #1e3e4a;
     font-weight: 600;
     margin-bottom: 20px;
     padding: 15px;
     background-color: #e3f6a7;
     border-radius: 7px;
-    text-align: justify center;
+    text-align: justify;
+    width: 40%;
 }
-section{
+.resume{
+    float: right;    
+}
+
+/***************************
+Contact Page
+***************************/
+.row {
+    font-family:'Crushed', cursive;
+    color: #ff853d;
+    font-size: 2em;
+}
+.input{
+    font-family:'Averia Libre', cursive;
+    color: #52f7a3;
+    font-weight: 400;
+    font-size: .75em;
+    border: solid 5px;
+    border-color: #1e3e4a;
+    border-radius: 7px;
+    background: #fff;
+}
+#submit-button{
+    width: 300px;
+    font-family: 'Averia Libre', cursive;
+    color: #1e3e4a;
+    font-size: 1.5em;
+    background-color: #e3f6a7;
+    font: bold;
+    border-radius: 7px;
+    border: solid 1px;
+    border-color: #1e3e4a; 
+}
+#submit-button:hover{
+    color: #52f7a3;
+}
+form{
     text-align: center;
 }
 
