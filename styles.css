@@ -334,6 +334,7 @@ nav {
 Resume page
 ***************************/
 .title{
+    font-family: 'Crushed', cursive;
     font-size: 2em;
     font-weight: 800;
     color: #ff853d;
