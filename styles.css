@@ -228,6 +228,7 @@ h5{
 }
 
 p{
+    font-family:  'Averia Libre', cursive;
     color: #1e3e4a;
     font-weight: 600;
 }
@@ -346,6 +347,7 @@ Resume page
     display: inline-block;
     text-align: center;
 }
+
 .objective,
 .education-hs,
 .education-college,
